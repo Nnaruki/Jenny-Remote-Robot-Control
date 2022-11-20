@@ -1,0 +1,7 @@
+{
+	"host":"192.168.0.35", 
+	"port_picture":"9001",
+	"port_move":"9002",
+	"product_number": "TEST"
+
+}

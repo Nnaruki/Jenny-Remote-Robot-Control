@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" media="(min-width: 813px)" href="sample.css">
+<link rel="stylesheet" media="(max-width: 813px)" href="style_mobile.css">
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./move.js"></script>
+
+<center>
+    <body>
+      <!-- <h2 id=jenny>Jenny</h2> -->
+      <!-- <script src="./sound.js"></script> -->
+      <!-- <div>
+        <canvas id="canvas_audio" width="500" height="40"></canvas>
+      </div> -->
+
+      <canvas id="cvs1" width=800 height=600></canvas>
+      <div>      
+      <script src="./picture.js"></script>
+    </body>
+</center>
+
+<div>  
+
+  <center>
+  <div>
+    <button id="btn_front" class="fixed_btn_front"><img src="picture_UI/front.png" width="100%" height="100%"></button>
+  </div>
+  <div>
+
+    <button id="btn_left" class="fixed_btn_left"><img src="picture_UI/left.png" width="100%" height="100%"></button>
+    <button id="stop" class="fixed_btn_stop"><img src="picture_UI/stop.png" width="100%" height="100%"></button>
+    <button id="btn_right" class="fixed_btn_right"><img src="picture_UI/right.png" width="100%" height="100%"></button>  
+
+  </div>
+  <div>
+    <button id="btn_back" class="fixed_btn_back"><img src="picture_UI/back.png" width="100%" height="100%"></button>
+  </div>
+  </center>
+  <p id=picture_circle class="picture_circle">Picture</p>
+  <button id="live" class="fixed_btn_live_circle"><img src="picture_UI/live.png" width="100%" height="100%"></button>
+  <p id=move_circle class="move_circle">Move</p>
+  <button id="btn_car" class="fixed_btn_car"><img src="picture_UI/car.png" width="100%" height="100%"></button>
+  <div>
+    <button id="live_on_off" class="fixed_btn_live"><img src="picture_UI/live.png" width="100%" height="100%"></button>
+  </div>  
+  
+</div>
+
+<div>
+  <form name="form1">
+    <div class="fixed_selectbox">
+      <select id="select">
+        <option selected>Slect Click Message</option>
+        <option value="camera_center">カメラ中心</option>
+        <option value="camera_up">カメラ上</option>
+        <option value="camera_down">カメラ下</option>
+        <option value="camera_boot">カメラ起動</option>
+        <option value="camera_boot_off">カメラOFF</option>
+        <option value="wake_up_camera">カメラ再起動</option>
+        <option value="camera_twice">画質二倍</option>
+        <option value="おはよう">おはよう</option>
+        <option value="通ります">通ります</option>
+        <option value="危険です">危険です</option>
+        <option value="コケッ">コケッ</option>
+        <option value="撮影中">撮影中</option>
+        <option value="動けないよ">動けないよ</option>
+        <option value="電源を切って">電源を切って</option>
+        <option value="仕事なう">仕事なう</option>
+        <option value="light_on">ライトON</option>
+        <option value="light_off">ライトOFF</option>
+        <option value="reboot">再起動</option>
+        <option value="picture_get">写真撮影</option>          
+      </select>
+      <input type="button" value="送信" id="select_option" class="select_button" />
+    </div>
+  </form>
+</div>
+
+<div class="input_box"> 
+  <body>
+      <form id="form1" action="#"></form>
+      <div>
+          <input type="text" class="inputbox" id="input-message" required="required" value="send message">
+      </div>
+      <div>
+          <input type="button" class="inputbox_send" id="message_input" value="送信">
+      </div>
+      </form>        
+  </body>
+</div>
+
+</html>
+
+
+  
